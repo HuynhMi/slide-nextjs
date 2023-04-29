@@ -1,0 +1,41 @@
+.slider-button {
+    --size: 60px;
+    --spacing: 2px;
+    width: var(--size);
+    height: var(--size);
+
+    position: absolute;
+    bottom: var(--spacing);
+    z-index: 10;
+    
+    background-color: var(--color-black);
+    cursor: pointer;
+    transition: all linear 300ms;
+}
+
+@media only screen and (max-width: 1024px) {
+    .slider-button {
+        display: none;
+    }
+}
+
+.slider-button img {
+    transition: all ease-out 300ms;
+    transform: scale(1);
+}
+
+.slider-button:hover {
+    background-color: var(--color-primary);
+}
+
+.slider-button:hover img {
+    transform: scale(1.6);
+}
+
+.slider-button--next {
+    right: var(--spacing);
+}
+
+.slider-button--previous {
+    right: calc(var(--size) + var(--spacing));
+}

@@ -1,0 +1,49 @@
+@import "./Banner.css";
+@import "./SliderButton.css";
+
+:root {
+  --size-full: 100%;
+  --color-white: #ffffff;
+  --color-black: #242424;
+  --color-primary: #d9b256;
+  
+}
+
+html {
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/*  Reset css */
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+
+/* Global Classes */
+.swiper {
+  width: var(--size-full);
+  height: var(--size-full);
+}
+
+.container {
+  --spacing : 4.375rem;
+  width: var(--size-full);
+  padding-left: var(--spacing);
+  padding-right: var(--spacing);
+}
+
+@media only screen and (max-width: 1140px) {
+  .container {
+    --spacing: 0px;
+  }
+}
+
+
